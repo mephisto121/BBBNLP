@@ -20,7 +20,7 @@ def parse_args():
                     help = "IUPAC input for BBB prediction with bert model ")
     parser.add_argument('-n', '--name', default='test_mol', help='The name of the molecule')
     parser.add_argument('-sm', '--smiles_model', default='model/nlp/model_33.tf',help='Path to the model')
-    parser.add_argument('-im', '--iupac_model', default='model/nlp/model_33iupac.tf', help='Path to the model')   
+    parser.add_argument('-im', '--iupac_model', default='model/nlp/model_34iupac.tf', help='Path to the model')   
 
     return parser.parse_args()
 
