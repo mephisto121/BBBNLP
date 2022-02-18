@@ -1,4 +1,4 @@
-# bbb_nlp_prediction
+# BBBNLP
 nlp models for blood brain barrier permeability
 one bidirectional LSTM model, one bert and one roberta model for bbb prediction
 if you want to use the dataset [please cite the group that made it](https://www.nature.com/articles/s41597-021-01069-5).
