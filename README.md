@@ -7,4 +7,4 @@ roberta model for smiles prediction was fine-tuned on [deepchem's 77mil model](h
 
 all the sklearn models and lightgbm model also are ready to use in their folder(sklearn_lgb_models).
 
-(https://colab.research.google.com/drive/1jGYf3sq93yO4EbgVaEl3nlClrVatVaXS#scrollTo=AMEdQItmilAw)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1jGYf3sq93yO4EbgVaEl3nlClrVatVaXS#scrollTo=AMEdQItmilAw)
