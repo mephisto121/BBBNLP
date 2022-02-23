@@ -6,3 +6,5 @@ the lstm model is uploaded in it's folder and for using the both bert and robert
 roberta model for smiles prediction was fine-tuned on [deepchem's 77mil model](https://huggingface.co/DeepChem/ChemBERTa-77M-MLM).
 
 all the sklearn models and lightgbm model also are ready to use in their folder(sklearn_lgb_models).
+
+(https://colab.research.google.com/drive/1jGYf3sq93yO4EbgVaEl3nlClrVatVaXS#scrollTo=AMEdQItmilAw)
