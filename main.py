@@ -45,7 +45,11 @@ if __name__ == '__main__':
         c[:n.shape[0]] = n
         c = list(c)
         c = [c]
-        print(np.round(model.predict(c)))
+        pred = np.round(model.predict(c))
+        if pred == 1:
+            print("Positive permeability")
+        else:
+            print("Negative permeability")
 
     elif bool(args.iupac_lstm)==True:
 
@@ -65,16 +69,27 @@ if __name__ == '__main__':
         c[:n.shape[0]] = n
         c = list(c)
         c = [c]
-        print(np.round(model.predict(c)))
+        pred = np.round(model.predict(c))
+
+        if pred == 1:
+            print("Positive permeability")
+        else:
+            print("Negative permeability")
 
     elif bool(args.iupac_bert) == True:
         model = ClassificationModel('bert', 'Parsa/BBB_prediction_classification_IUPAC',use_cuda=False)
         pred, _ = model.predict([args.iupac_bert])
-        print(pred)
+        if pred == 1:
+            print("Positive permeability")
+        else:
+            print("Negative permeability")
 
     elif bool(args.smiles_roberta) == True:
         model = ClassificationModel('roberta', "Parsa/BBB_prediction_classification_SMILES",use_cuda=False)
         pred, _ = model.predict([args.smiles_roberta])
-        print(pred)
+        if pred == 1:
+            print("Positive permeability")
+        else:
+            print("Negative permeability")
     else:
         print('found no inputs')
